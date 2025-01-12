@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import { RecoilRoot } from "recoil";
 import Home from "./pages/Home";
 import Nav from "./components/Nav";
 import Login from "./pages/Login";
@@ -16,7 +17,7 @@ import VideoPageAutonomy from "./pages/Category/VideoPageAutonomy"; // 자율 �
 
 function App() {
   return (
-    <div className="App">
+    <RecoilRoot>
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -38,7 +39,7 @@ function App() {
           element={<VideoPageAutonomy />}
         />
       </Routes>
-    </div>
+    </RecoilRoot>
   );
 }
 
