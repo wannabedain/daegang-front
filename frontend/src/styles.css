@@ -1,0 +1,8 @@
+/* src/styles.css */
+.btn {
+  @apply bg-blue-500 text-white p-4 rounded shadow-md;
+}
+
+.card {
+  @apply bg-white p-6 rounded-lg shadow-lg;
+}
